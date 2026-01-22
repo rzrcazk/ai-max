@@ -1,6 +1,7 @@
 import os from 'os';
 import path from 'path';
 import fs from 'fs-extra';
+import { fileURLToPath } from 'url';
 
 /**
  * 获取 Claude 配置目录路径
@@ -62,7 +63,7 @@ export async function saveInstalledVersion(version, components) {
  * 获取包版本
  */
 export function getPackageVersion() {
-  const pkgPath = new URL('../package.json', import.meta.url);
+  const pkgPath = path.join(getSourceDir(), 'package.json');
   const pkg = fs.readJsonSync(pkgPath);
   return pkg.version;
 }
@@ -106,7 +107,9 @@ export const COMPONENTS = {
  * 获取源目录（包安装的位置）
  */
 export function getSourceDir() {
-  return new URL('..', import.meta.url).pathname;
+  const __filename = fileURLToPath(import.meta.url);
+  const __dirname = path.dirname(__filename);
+  return path.dirname(__dirname);
 }
 
 /**
