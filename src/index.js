@@ -68,7 +68,6 @@ export async function runInstall(options = {}) {
   console.log(chalk.cyan('后续步骤：'));
   console.log(chalk.gray('  1. 重启 Claude Code 以加载新配置'));
   console.log(chalk.gray('  2. 使用 /aimax:plan, /aimax:tdd, /aimax:code-review 等命令'));
-  console.log(chalk.gray('  3. 阅读指南：https://x.com/affaanmustafa/status/2012378465664745795'));
   console.log('');
 }
 

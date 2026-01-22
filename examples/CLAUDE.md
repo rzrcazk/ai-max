@@ -87,10 +87,10 @@ DEBUG=false
 
 ## 可用命令
 
-- `/tdd` - 测试驱动开发工作流
-- `/plan` - 创建实现计划
-- `/code-review` - 审查代码质量
-- `/build-fix` - 修复构建错误
+- `/aimax:tdd` - 测试驱动开发工作流
+- `/aimax:plan` - 创建实现计划
+- `/aimax:code-review` - 审查代码质量
+- `/aimax:build-fix` - 修复构建错误
 
 ## Git 工作流
 

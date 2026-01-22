@@ -11,7 +11,7 @@ export function showBanner() {
   console.log(chalk.cyan.bold('  ╔═══════════════════════════════════════════╗'));
   console.log(chalk.cyan.bold('  ║                                           ║'));
   console.log(chalk.cyan.bold('  ║') + chalk.white.bold(`           AI MAX（v${version}）                 `) + chalk.cyan.bold('║'));
-  console.log(chalk.cyan.bold('  ║') + chalk.gray('     Claude Code 能力增强，开箱即用      ') + chalk.cyan.bold('║'));
+  console.log(chalk.cyan.bold('  ║') + chalk.gray('     Claude Code 一键能力增强，开箱即用      ') + chalk.cyan.bold('║'));
   console.log(chalk.cyan.bold('  ║                                           ║'));
   console.log(chalk.cyan.bold('  ╚═══════════════════════════════════════════╝'));
   console.log('');

@@ -16,7 +16,7 @@ description: 强制执行测试驱动开发工作流程。先搭建接口，先�
 
 ## 何时使用
 
-在以下情况使用 `/tdd`：
+在以下情况使用 `/aimax:tdd`：
 - 实现新功能
 - 添加新函数/组件
 - 修复 bug（首先编写重现 bug 的测试）
@@ -49,7 +49,7 @@ tdd-guide 代理将：
 ## 使用示例
 
 ```
-用户：/tdd 我需要一个计算市场流动性评分的函数
+用户：/aimax:tdd 我需要一个计算市场流动性评分的函数
 
 代理（tdd-guide）：
 # TDD 会话：市场流动性评分计算器
@@ -285,7 +285,7 @@ Coverage: 100% ✅ (Target: 80%)
 - 外部服务调用
 - 带 hooks 的 React 组件
 
-**E2E 测试**（使用 `/e2e` 命令）：
+**E2E 测试**（使用 `/aimax:e2e` 命令）：
 - 关键用户流程
 - 多步骤流程
 - 全栈集成
@@ -311,11 +311,11 @@ Coverage: 100% ✅ (Target: 80%)
 
 ## 与其他命令的集成
 
-- 首先使用 `/plan` 了解要构建什么
-- 使用 `/tdd` 通过测试来实现
-- 如果出现构建错误，使用 `/build-and-fix`
-- 使用 `/code-review` 审查实现
-- 使用 `/test-coverage` 验证覆盖率
+- 首先使用 `/aimax:plan` 了解要构建什么
+- 使用 `/aimax:tdd` 通过测试来实现
+- 如果出现构建错误，使用 `/aimax:build-fix`
+- 使用 `/aimax:code-review` 审查实现
+- 使用 `/aimax:test-coverage` 验证覆盖率
 
 ## 相关代理
 

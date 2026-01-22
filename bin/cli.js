@@ -10,7 +10,7 @@ const program = new Command();
 program
   .name('aimax')
   .description('AI MAX - Claude Code 能力增强，开箱即用')
-  .version(getPackageVersion());
+  .version(getPackageVersion(), '-v, --version', '显示版本号');
 
 // 默认命令 - 交互模式
 program
